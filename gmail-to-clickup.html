@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to Save Gmail Emails to ClickUp Tasks Without Google OAuth or Logout Loops | ClipFlow</title>
+<meta name="description" content="Step-by-step: save any Gmail email as a ClickUp task in one click. No Google OAuth, no logout loops. Uses ClipFlow's Gmail preset and email variables.">
+<link rel="canonical" href="https://broompositive.github.io/clipflow-site/gmail-to-clickup.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%234f46e5'/%3E%3Cpath d='M13.5 3.5 6.5 13h4.5l-1 7.5 7-9.5H12.5z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#4f46e5"/><path d="M13.5 3.5 6.5 13h4.5l-1 7.5 7-9.5H12.5z" fill="#fff"/></svg><span>ClipFlow</span></a>
+<nav aria-label="Main"><a href="index.html#features">Features</a><a href="index.html#compare">Compare</a><a href="index.html#guides">Guides</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav></div></header>
+<main>
+<h1>How to Save Gmail Emails to ClickUp Tasks Without Google OAuth or Logout Loops</h1>
+<p class="sub">ClipFlow reads the email you already have open and creates a ClickUp task from it. It never asks for access to your Google account, so there is no Google sign-in to loop or expire.</p>
+
+<h2>What you need</h2>
+<ul><li>A ClickUp account and a Personal API Token.</li><li>The ClipFlow extension (free during beta).</li></ul>
+
+<h2>Step by step</h2>
+<ol>
+<li><b>Get your ClickUp token.</b> In ClickUp open your avatar menu, then <i>Settings</i>, <i>Apps</i>, <i>API Token</i>, <i>Generate</i>. Copy the <code>pk_...</code> token.</li>
+<li><b>Connect ClipFlow.</b> Click the ClipFlow icon, open <i>Settings</i>, paste the token and press <b>Test Connection</b>.</li>
+<li><b>Add the Gmail preset.</b> Open <i>Forms</i> and choose <b>Gmail → ClickUp Task</b>. Pick the Workspace, Space and List where these tasks should land. Optionally set status, priority, tags and a due date such as <code>{{date+2d}}</code>.</li>
+<li><b>Open an email in Gmail.</b> Click <b>Save to ClipFlow</b> next to the email, or click the toolbar icon. The popup opens already filled in.</li>
+<li><b>Tweak and save.</b> Edit the title or description if you like, then press <b>Save Clip</b> (or <code>Ctrl+Enter</code>).</li>
+</ol>
+
+<h2>The email variables</h2>
+<p>The preset uses these. You can change or reuse them in any form:</p>
+<table><thead><tr><th>Variable</th><th>What it fills in</th></tr></thead><tbody>
+<tr><td><code>{{email.subject}}</code></td><td>The email subject (default task title)</td></tr>
+<tr><td><code>{{email.from}}</code></td><td>Sender name and address</td></tr>
+<tr><td><code>{{email.url}}</code></td><td>Link back to the thread in Gmail</td></tr>
+<tr><td><code>{{email.body}}</code></td><td>Cleaned email text</td></tr>
+</tbody></table>
+<p>The default description is <code>From: {{email.from}}</code>, then the link, then the body. Make your own form to change that.</p>
+
+<h2>Why no Google OAuth?</h2>
+<p>ClipFlow only reads the email that is open on your screen, at the moment you click. It does not request access to your mailbox, so nothing can expire, and nothing is sent to a ClipFlow server. If the Gmail button does not appear, see <a href="support.html">Support</a>.</p>
+
+<p>Also worth a look: <a href="clickup-chrome-extension-slow.html">why some ClickUp extensions use so much CPU</a>.</p>
+<p><a class="btn" href="https://chromewebstore.google.com/detail/clipflow/djokbldinhahcmceginmgedppkpegnlk" target="_blank" rel="noreferrer">Add to Chrome — Free Beta</a></p>
+<footer><a href="index.html">Back to ClipFlow</a> &middot; <a href="privacy.html">Privacy policy</a> &middot; <a href="mailto:clipflow.support@gmail.com">Support</a> &middot; ClipFlow is not affiliated with ClickUp, Airtable or Google.</footer>
+</main></body></html>
