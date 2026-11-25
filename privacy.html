@@ -11,11 +11,11 @@
 <ul>
 <li><b>No servers.</b> We operate no backend. Nothing you clip is sent to us.</li>
 <li><b>No telemetry, analytics or tracking.</b> No cookies, no ad IDs, no usage pings.</li>
-<li><b>Where data goes.</b> When you press Save, ClipFlow sends the clip directly from your browser to the service you chose, <code>api.clickup.com</code> (ClickUp) or <code>api.airtable.com</code> (Airtable), using the API token you provided. Their own privacy policies apply from that point.</li>
-<li><b>What is stored locally.</b> Your ClickUp token, Airtable token, saved forms, a 5-minute cache of workspace and base names, and a clip counter. All of it stays in <code>chrome.storage.local</code> on your device and is removed when you uninstall the extension.</li>
+<li><b>Where data goes.</b> When you press Save, ClipFlow sends the clip directly from your browser to the service you chose, <code>api.clickup.com</code> (ClickUp), <code>app.asana.com</code> (Asana) or <code>api.airtable.com</code> (Airtable), using the API token you provided. Their own privacy policies apply from that point.</li>
+<li><b>What is stored locally.</b> Your ClickUp, Asana and Airtable tokens, saved forms, a 5-minute cache of workspace and base names, and a clip counter. All of it stays in <code>chrome.storage.local</code> on your device and is removed when you uninstall the extension.</li>
 <li><b>Gmail.</b> On <code>mail.google.com</code> ClipFlow reads the currently open email (subject, sender, link, body) from the page only when you save it. It does not use the Gmail API, does not request Google OAuth access, and does not read other emails.</li>
 <li><b>Other websites.</b> ClipFlow reads the active page (title, URL, your selection, meta description, and any CSS selectors you set) only when you open the popup or press Save, using the <code>activeTab</code> permission.</li>
-<li><b>Permissions.</b> <code>storage</code> (save settings), <code>activeTab</code> and <code>scripting</code> (read the page you are clipping), and host access to ClickUp, Airtable and Gmail (send clips; read the open email).</li>
+<li><b>Permissions.</b> <code>storage</code> (save settings), <code>activeTab</code> and <code>scripting</code> (read the page you are clipping), host access to ClickUp, Airtable and Gmail (send clips; read the open email), and optional host access to <code>app.asana.com</code>, which Chrome asks you to allow only when you connect Asana. You can revoke it any time in chrome://extensions.</li>
 <li><b>Children.</b> Not directed at children under 13.</li>
 <li><b>Contact.</b> Questions or support: <a href="mailto:clipflow.support@gmail.com">clipflow.support@gmail.com</a>.</li>
 </ul>
