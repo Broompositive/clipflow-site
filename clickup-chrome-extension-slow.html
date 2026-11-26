@@ -4,7 +4,24 @@
 <meta name="description" content="ClickUp Chrome extension slow or using high CPU? Quick fixes to try, why it happens, and a lightweight event-driven alternative for saving pages and Gmail to ClickUp.">
 <link rel="canonical" href="https://broompositive.github.io/clipflow-site/clickup-chrome-extension-slow.html">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%234f46e5'/%3E%3Cpath d='M13.5 3.5 6.5 13h4.5l-1 7.5 7-9.5H12.5z' fill='%23fff'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css"></head>
+<link rel="stylesheet" href="style.css">
+
+
+<!-- seo:start -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ClipFlow">
+<meta property="og:title" content="ClickUp Chrome Extension Slow or High CPU? Fix It With a Zero-CPU Alternative | ClipFlow">
+<meta property="og:description" content="ClickUp Chrome extension slow or using high CPU? Quick fixes to try, why it happens, and a lightweight event-driven alternative for saving pages and Gmail to ClickUp.">
+<meta property="og:url" content="https://broompositive.github.io/clipflow-site/clickup-chrome-extension-slow.html">
+<meta property="og:image" content="https://broompositive.github.io/clipflow-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ClickUp Chrome Extension Slow or High CPU? Fix It With a Zero-CPU Alternative | ClipFlow">
+<meta name="twitter:description" content="ClickUp Chrome extension slow or using high CPU? Quick fixes to try, why it happens, and a lightweight event-driven alternative for saving pages and Gmail to ClickUp.">
+<meta name="twitter:image" content="https://broompositive.github.io/clipflow-site/og.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "How to troubleshoot a slow or high-CPU ClickUp Chrome extension", "description": "ClickUp Chrome extension slow or using high CPU? Quick fixes to try, why it happens, and a lightweight event-driven alternative for saving pages and Gmail to ClickUp.", "url": "https://broompositive.github.io/clipflow-site/clickup-chrome-extension-slow.html", "tool": [{"@type": "HowToTool", "name": "ClipFlow Chrome extension"}], "step": [{"@type": "HowToStep", "position": 1, "text": "Open Chrome's Task Manager (Shift+Esc) and sort by CPU. Confirm the extension really is the culprit before changing anything."}, {"@type": "HowToStep", "position": 2, "text": "Update the extension and Chrome, then restart the browser."}, {"@type": "HowToStep", "position": 3, "text": "In chrome://extensions, set the extension to run on click instead of on all sites if it offers that option."}, {"@type": "HowToStep", "position": 4, "text": "Disable it for a minute and see if the CPU drops. If it does, the extension is the cause."}, {"@type": "HowToStep", "position": 5, "text": "Test in a fresh Chrome profile with only that one extension, to rule out clashes with others."}, {"@type": "HowToStep", "position": 6, "text": "If it keeps happening, report it to the vendor with your Chrome version and the Task Manager reading."}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why is the ClickUp Chrome extension slow?", "acceptedAnswer": {"@type": "Answer", "text": "When a clipper extension slows Chrome, the usual causes are always-on scripts injected into every tab, background polling timers, and heavy page observers on busy apps like Gmail. Open Chrome's Task Manager (Shift+Esc) and sort by CPU to confirm which extension is responsible on your machine."}}, {"@type": "Question", "name": "How do I check if a Chrome extension is using high CPU?", "acceptedAnswer": {"@type": "Answer", "text": "Press Shift+Esc to open Chrome's Task Manager, sort by the CPU column, and look for the extension's row. Disable the extension for a minute; if CPU drops, it was the cause."}}, {"@type": "Question", "name": "Is there a lightweight alternative to the ClickUp Chrome extension?", "acceptedAnswer": {"@type": "Answer", "text": "ClipFlow is an event-driven Chrome extension that saves web pages and Gmail emails to ClickUp tasks. Nothing runs between clips and it injects nothing on other sites except a small Gmail button. It is free during beta."}}, {"@type": "Question", "name": "Can I save Gmail emails to ClickUp without the official extension?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. ClipFlow's Gmail to ClickUp preset turns the open email's subject, sender, link and body into a ClickUp task, with no Google sign-in."}}]}</script>
+<!-- seo:end -->
+</head>
 <body>
 <header class="top"><div class="wrap"><a class="brand" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#4f46e5"/><path d="M13.5 3.5 6.5 13h4.5l-1 7.5 7-9.5H12.5z" fill="#fff"/></svg><span>ClipFlow</span></a>
 <nav aria-label="Main"><a href="index.html#features">Features</a><a href="index.html#compare">Compare</a><a href="index.html#guides">Guides</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav></div></header>
@@ -41,6 +58,18 @@
 
 <h2>What you can do with it</h2>
 <p>Save any web page or Gmail email as a ClickUp task, with list, status, priority, tags, due date and custom fields set once in a reusable form. See <a href="gmail-to-clickup.html">how to save Gmail emails to ClickUp</a>.</p>
+<!-- faq:start -->
+<section id="faq"><h2>Frequently asked questions</h2>
+<h3>Why is the ClickUp Chrome extension slow?</h3>
+<p>When a clipper extension slows Chrome, the usual causes are always-on scripts injected into every tab, background polling timers, and heavy page observers on busy apps like Gmail. Open Chrome's Task Manager (Shift+Esc) and sort by CPU to confirm which extension is responsible on your machine.</p>
+<h3>How do I check if a Chrome extension is using high CPU?</h3>
+<p>Press Shift+Esc to open Chrome's Task Manager, sort by the CPU column, and look for the extension's row. Disable the extension for a minute; if CPU drops, it was the cause.</p>
+<h3>Is there a lightweight alternative to the ClickUp Chrome extension?</h3>
+<p>ClipFlow is an event-driven Chrome extension that saves web pages and Gmail emails to ClickUp tasks. Nothing runs between clips and it injects nothing on other sites except a small Gmail button. It is free during beta.</p>
+<h3>Can I save Gmail emails to ClickUp without the official extension?</h3>
+<p>Yes. ClipFlow's Gmail to ClickUp preset turns the open email's subject, sender, link and body into a ClickUp task, with no Google sign-in.</p>
+</section>
+<!-- faq:end -->
 <p><a class="btn" href="https://chromewebstore.google.com/detail/clipflow/djokbldinhahcmceginmgedppkpegnlk" target="_blank" rel="noreferrer">Add to Chrome — Free Beta</a></p>
 <footer><a href="index.html">Back to ClipFlow</a> &middot; <a href="privacy.html">Privacy policy</a> &middot; <a href="mailto:clipflow.support@gmail.com">Support</a> &middot; ClipFlow is not affiliated with ClickUp, Airtable or Google.</footer>
 </main></body></html>

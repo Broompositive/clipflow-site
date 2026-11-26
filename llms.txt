@@ -1,0 +1,31 @@
+# ClipFlow
+
+> ClipFlow is a free (beta) Chrome extension that saves web pages, highlighted text and Gmail emails straight into ClickUp tasks, Asana tasks or Airtable records. It is event-driven (no background CPU or polling), needs no Google OAuth for Gmail, and runs 100% locally with no ClipFlow server.
+
+- Install: https://chromewebstore.google.com/detail/clipflow/djokbldinhahcmceginmgedppkpegnlk
+- Website: https://broompositive.github.io/clipflow-site/
+- Current version: 0.4.0 (free beta, every feature unlocked)
+- Not affiliated with ClickUp, Asana, Airtable or Google.
+
+## What it does
+- Targets: ClickUp tasks, Asana tasks (workspace, project, section, assignee, due date, custom fields), Airtable records (any base/table, field mapping).
+- Sources: any web page (title, URL, selection, meta description, CSS-selector values) and the Gmail email currently open (subject, sender, link, cleaned body).
+- Reusable clip forms: set list/table, status, priority, tags, relative due date (e.g. +2d) and custom fields once; then clip in one click or Ctrl+Enter. Alt+Shift+C opens the popup.
+- Template variables: {{title}} {{url}} {{selection}} {{metaDescription}} {{email.subject}} {{email.from}} {{email.url}} {{email.body}} {{date}} {{date+2d}} {{css.name}}
+- Airtable on the Free plan: uses an Airtable Personal Access Token (scopes data.records:write, schema.bases:read).
+
+## Performance and privacy model
+- No background timers or polling; nothing runs between clips. The popup opens from a 5-minute local cache of workspace names.
+- Nothing is injected on other sites except a small "Save to ClipFlow" button on Gmail; other pages are read only when the user opens the popup (activeTab).
+- No servers, no telemetry, no tracking. Tokens, forms and cache live in chrome.storage.local. Clips go directly from the browser to api.clickup.com, app.asana.com or api.airtable.com using the user's own token.
+- Gmail: reads only the open email from the page at click time; does not use the Gmail API or request Google OAuth.
+
+## Guides
+- [ClickUp Chrome extension slow or high CPU? A zero-CPU alternative](https://broompositive.github.io/clipflow-site/clickup-chrome-extension-slow.html)
+- [Save Gmail emails to ClickUp tasks without Google OAuth](https://broompositive.github.io/clipflow-site/gmail-to-clickup.html)
+- [Save Gmail emails and highlighted text to Asana tasks](https://broompositive.github.io/clipflow-site/gmail-to-asana.html)
+- [Free Airtable web clipper that works on the Free plan](https://broompositive.github.io/clipflow-site/free-airtable-web-clipper.html)
+
+## Other
+- [Privacy policy](https://broompositive.github.io/clipflow-site/privacy.html)
+- [Support](https://broompositive.github.io/clipflow-site/support.html) (email clipflow.support@gmail.com)

@@ -4,7 +4,24 @@
 <meta name="description" content="A free Airtable web clipper that works on the Free plan using a Personal Access Token, with editable field mapping and CSS selectors. Save pages straight to a table.">
 <link rel="canonical" href="https://broompositive.github.io/clipflow-site/free-airtable-web-clipper.html">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%234f46e5'/%3E%3Cpath d='M13.5 3.5 6.5 13h4.5l-1 7.5 7-9.5H12.5z' fill='%23fff'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css"></head>
+<link rel="stylesheet" href="style.css">
+
+
+<!-- seo:start -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ClipFlow">
+<meta property="og:title" content="Free Airtable Web Clipper (Works on Airtable's Free Plan) | ClipFlow">
+<meta property="og:description" content="A free Airtable web clipper that works on the Free plan using a Personal Access Token, with editable field mapping and CSS selectors. Save pages straight to a table.">
+<meta property="og:url" content="https://broompositive.github.io/clipflow-site/free-airtable-web-clipper.html">
+<meta property="og:image" content="https://broompositive.github.io/clipflow-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Airtable Web Clipper (Works on Airtable's Free Plan) | ClipFlow">
+<meta name="twitter:description" content="A free Airtable web clipper that works on the Free plan using a Personal Access Token, with editable field mapping and CSS selectors. Save pages straight to a table.">
+<meta name="twitter:image" content="https://broompositive.github.io/clipflow-site/og.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "How to clip web pages to Airtable on the Free plan", "description": "A free Airtable web clipper that works on the Free plan using a Personal Access Token, with editable field mapping and CSS selectors. Save pages straight to a table.", "url": "https://broompositive.github.io/clipflow-site/free-airtable-web-clipper.html", "tool": [{"@type": "HowToTool", "name": "ClipFlow Chrome extension"}], "step": [{"@type": "HowToStep", "position": 1, "text": "Create a token at airtable.com/create/tokens with the scopes data.records:write and schema.bases:read. Add the bases you want to save into."}, {"@type": "HowToStep", "position": 2, "text": "Paste it into ClipFlow Settings and press Test Connection."}, {"@type": "HowToStep", "position": 3, "text": "Add the Webpage → Airtable Record preset in Forms and choose your Base and Table."}, {"@type": "HowToStep", "position": 4, "text": "Map your fields. Match each Airtable column to a value. The preset maps Name to {{title}}, URL to {{url}} and Notes to {{selection}}. Rename or add columns to match your table."}, {"@type": "HowToStep", "position": 5, "text": "Clip. Open any page, optionally select text, open ClipFlow and press Save Clip. You can edit each field before it is saved."}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there a free Airtable web clipper for the Free plan?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. ClipFlow is a free Chrome extension that saves web pages to Airtable using a Personal Access Token, which works on Airtable's Free plan. Airtable's own clipper has been offered on paid plans, so check Airtable's current pricing."}}, {"@type": "Question", "name": "What Airtable token scopes does ClipFlow need?", "acceptedAnswer": {"@type": "Answer", "text": "data.records:write and schema.bases:read, with access to the bases you want to save into. Create the token at airtable.com/create/tokens."}}, {"@type": "Question", "name": "Can I clip only part of a page into Airtable?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Name a CSS selector in your form, for example price = .product-price, then use {{css.price}} in any column to save that element's text."}}, {"@type": "Question", "name": "Does ClipFlow see or store my Airtable data?", "acceptedAnswer": {"@type": "Answer", "text": "No. There is no ClipFlow server. Your token stays in your browser and clips go straight from your browser to Airtable."}}]}</script>
+<!-- seo:end -->
+</head>
 <body>
 <header class="top"><div class="wrap"><a class="brand" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#4f46e5"/><path d="M13.5 3.5 6.5 13h4.5l-1 7.5 7-9.5H12.5z" fill="#fff"/></svg><span>ClipFlow</span></a>
 <nav aria-label="Main"><a href="index.html#features">Features</a><a href="index.html#compare">Compare</a><a href="index.html#guides">Guides</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></nav></div></header>
@@ -31,6 +48,18 @@
 <p>ClipFlow is free during the beta, with every feature unlocked. Your token stays in your browser and clips go straight from your browser to Airtable. No ClipFlow server sees them.</p>
 
 <p>Also see <a href="gmail-to-clickup.html">saving Gmail emails to ClickUp</a>.</p>
+<!-- faq:start -->
+<section id="faq"><h2>Frequently asked questions</h2>
+<h3>Is there a free Airtable web clipper for the Free plan?</h3>
+<p>Yes. ClipFlow is a free Chrome extension that saves web pages to Airtable using a Personal Access Token, which works on Airtable's Free plan. Airtable's own clipper has been offered on paid plans, so check Airtable's current pricing.</p>
+<h3>What Airtable token scopes does ClipFlow need?</h3>
+<p>data.records:write and schema.bases:read, with access to the bases you want to save into. Create the token at airtable.com/create/tokens.</p>
+<h3>Can I clip only part of a page into Airtable?</h3>
+<p>Yes. Name a CSS selector in your form, for example price = .product-price, then use {{css.price}} in any column to save that element's text.</p>
+<h3>Does ClipFlow see or store my Airtable data?</h3>
+<p>No. There is no ClipFlow server. Your token stays in your browser and clips go straight from your browser to Airtable.</p>
+</section>
+<!-- faq:end -->
 <p><a class="btn" href="https://chromewebstore.google.com/detail/clipflow/djokbldinhahcmceginmgedppkpegnlk" target="_blank" rel="noreferrer">Add to Chrome — Free Beta</a></p>
 <footer><a href="index.html">Back to ClipFlow</a> &middot; <a href="privacy.html">Privacy policy</a> &middot; <a href="mailto:clipflow.support@gmail.com">Support</a> &middot; ClipFlow is not affiliated with ClickUp, Airtable or Google.</footer>
 </main></body></html>
